@@ -1,3 +1,25 @@
+ terraform {
+    required_providers {
+         azurerm = {
+             version =   ">= 2.20"
+            source  =   "hashicorp/azurerm"
+         }
+     }
+ }
+
+// #
+// # - Provider Block
+// #
+
+ provider "azurerm" {
+     client_id       =   var.client_id
+     client_secret   =   var.client_secret
+     subscription_id =   var.subscription_id
+     tenant_id       =   var.tenant_id
+    
+     features {}
+ }
+
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location
