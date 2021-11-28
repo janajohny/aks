@@ -1,17 +1,4 @@
- terraform {
-    required_providers {
-         azurerm = {
-             version =   ">= 2.20"
-            source  =   "hashicorp/azurerm"
-         }
-     }
- }
-
-// #
-// # - Provider Block
-// #
-
- provider "azurerm" {
+provider "azurerm" {
      client_id       =   var.client_id
      client_secret   =   var.client_secret
      subscription_id =   var.subscription_id
