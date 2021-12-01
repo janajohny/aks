@@ -19,7 +19,7 @@ spec:
         app: nodejs
     spec:
       containers:
-      - image: janajohny/nodejs
+      - image: janajohny/node
         name: repo1
         resources: {}
 status: {}
